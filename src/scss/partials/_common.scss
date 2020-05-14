@@ -1,0 +1,25 @@
+/**************************************
+     commons
+**************************************/
+
+// mixin
+// dichiaro mixin
+@mixin horizontal-list() {
+        list-style: none;
+        margin: 0;
+}
+@mixin padding-10 {
+  padding: 10px;
+}
+
+@mixin displayFlex {
+    display:  flex;
+}
+
+@mixin displayFlexEnd {
+    display:  flex;
+    justify-content: flex-end;
+}
+
+
+// general rules
