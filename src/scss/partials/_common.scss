@@ -3,6 +3,10 @@
 **************************************/
 
 // mixin
+<<<<<<< HEAD
+=======
+// dichiaro mixin
+>>>>>>> master
 @mixin horizontal-list() {
         list-style: none;
         margin: 0;
@@ -20,6 +24,7 @@
     justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 // cycles
 @for $i from 1 through 3 {
   .padding-#{$i} {
@@ -50,3 +55,7 @@ body {
     }
   }
 }
+=======
+
+// general rules
+>>>>>>> master

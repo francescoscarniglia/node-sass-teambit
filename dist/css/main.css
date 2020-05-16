@@ -6,6 +6,7 @@
      commons
 **************************************/
 
+<<<<<<< HEAD
 .padding-1 {
   padding: 10px;
 }
@@ -16,12 +17,19 @@
 
 .padding-3 {
   padding: 30px;
+=======
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+>>>>>>> master
 }
 
 body {
   background: lightgreen;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 992px) {
   #app {
     display: flex;
@@ -352,6 +360,50 @@ body {
   .offset-xs-10 {
     margin-left: calc((100% / 12) * 10);
   }
+=======
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  margin: 10px auto;
+  background: white;
+  height: 100vh;
+}
+
+#app #main-content {
+  background: #fff;
+  flex-grow: 1;
+}
+
+#main-header {
+  display: flex;
+}
+
+#main-header .logo {
+  padding: 10px;
+  background: green;
+}
+
+#main-header .menu {
+  padding: 10px;
+  flex-grow: 1;
+  background: orange;
+}
+
+#main-header .menu .main-menu ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#main-header .menu .main-menu ul li {
+  margin: 0 10px;
+}
+
+#main-header .menu .main-menu ul li:last-child {
+  margin: 0 0;
+>>>>>>> master
 }
 
 
