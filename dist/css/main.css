@@ -1,3 +1,11 @@
+/* Phones (landscape phones, 576px and up) */
+
+/* Tablets (tablets, 768px and up) */
+
+/* Desktops (desktops, 992px and up) */
+
+/* Large desktops (large desktops, 1200px and up) */
+
 /**************************************
         vars
 **************************************/
@@ -6,7 +14,6 @@
      commons
 **************************************/
 
-<<<<<<< HEAD
 .padding-1 {
   padding: 10px;
 }
@@ -17,32 +24,49 @@
 
 .padding-3 {
   padding: 30px;
-=======
-* {
-  box-sizing: border-box;
-  margin: 0;
-  border: 0;
->>>>>>> master
 }
 
 body {
-  background: lightgreen;
+  font-family: sans-serif;
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 992px) {
-  #app {
-    display: flex;
-    flex-direction: column;
-    width: 1170px;
-    margin: 10px auto;
-    background: white;
-    height: 100vh;
-  }
+.img {
+  height: auto;
+}
 
-  #app #main-content {
-    background: #fff;
-    flex-grow: 1;
+#app {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100vh;
+}
+
+#app #main-content {
+  background: #fff;
+  flex-grow: 1;
+}
+
+/*******************************
+            header
+*******************************/
+
+#main-header {
+  background: #fff;
+  border-bottom: 1px solid #bdb5af;
+}
+
+.toggle {
+  text-align: right;
+}
+
+.toggle img {
+  width: 30px;
+}
+
+@media (min-width: 992px) {
+  .navbar,
+  .toggle {
+    display: none;
   }
 }
 
@@ -69,7 +93,7 @@ body {
 
 [class^=col-] {
   float: left;
-  padding: 16px;
+  padding: 8px;
 }
 
 /* ------  MEDIA QUERY -------- */
@@ -360,50 +384,6 @@ body {
   .offset-xs-10 {
     margin-left: calc((100% / 12) * 10);
   }
-=======
-#app {
-  display: flex;
-  flex-direction: column;
-  width: 1170px;
-  margin: 10px auto;
-  background: white;
-  height: 100vh;
-}
-
-#app #main-content {
-  background: #fff;
-  flex-grow: 1;
-}
-
-#main-header {
-  display: flex;
-}
-
-#main-header .logo {
-  padding: 10px;
-  background: green;
-}
-
-#main-header .menu {
-  padding: 10px;
-  flex-grow: 1;
-  background: orange;
-}
-
-#main-header .menu .main-menu ul {
-  list-style: none;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-#main-header .menu .main-menu ul li {
-  margin: 0 10px;
-}
-
-#main-header .menu .main-menu ul li:last-child {
-  margin: 0 0;
->>>>>>> master
 }
 
 

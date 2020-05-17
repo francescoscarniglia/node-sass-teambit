@@ -1,62 +1,7 @@
 // https://sass-lang.com/documentation/operators/numeric
 // https://www.sassmeister.com/
+@import 'partials/breakpoint';
 @import 'partials/variables';
 @import 'partials/common';
-<<<<<<< HEAD
 @import 'partials/header';
 @import 'partials/my-layout';
-=======
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  border: 0;
-}
-
-body {
-  background: $bg-lightgreen;
-}
-
-#app {
-  @include displayFlex();
-  flex-direction: column;
-  width: 1170px;
-  margin: 10px auto;
-  background: rgba($bg-white, 1);
-  height: 100vh;
-
-  #main-content {
-    background: $bg-white;
-    flex-grow: 1;
-  }
-}
-
-#main-header{
-  @include displayFlex();
-  .logo {
-    @include padding-10();
-    background: $bg-green;
-  }//logo
-  .menu {
-    @include padding-10();
-    flex-grow: 1;
-    background: $bg-orange;
-
-    .main-menu {
-        ul {
-          @include horizontal-list();
-          @include displayFlexEnd();
-
-          li {
-            margin: 0 10px;
-          }//li
-
-          li:last-child {
-            margin: 0 0;
-          }//li:last-child
-        }//ul
-        }//main-menu
-
-  }//menu
-}//main-header
->>>>>>> master

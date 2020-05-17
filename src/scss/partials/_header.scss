@@ -1,0 +1,31 @@
+/*******************************
+            header
+*******************************/
+
+#main-header {
+  background: $bg-white;
+  border: {
+    bottom: 1px solid $col-lightgray;
+  }
+};
+
+.toggle {
+  text-align: right;
+}
+
+.toggle img {
+  width: 30px;
+}
+.main-menu {
+  //display: none;
+}
+
+.navbar {
+
+}
+@include desktop {
+  .navbar,
+  .toggle {
+    display: none;
+  }
+}
