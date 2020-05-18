@@ -4,9 +4,6 @@
 
 #main-header {
   background: $bg-white;
-  border: {
-    bottom: 1px solid $col-lightgray;
-  }
 };
 
 .toggle {
@@ -14,18 +11,61 @@
 }
 
 .toggle img {
-  width: 30px;
+  width: 26px;
 }
 .main-menu {
-  //display: none;
-}
+  border-top: 1px solid $col-lightgray;
+  .navbar {
+    // display: none;
+  }//navbar
+}//main-menu
 
-.navbar {
 
-}
-@include desktop {
-  .navbar,
+@include tablet{
   .toggle {
     display: none;
   }
-}
+
+  .logo {
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+
+  nav.main-menu {
+    border: 0;
+    padding-right: 0px;
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      align-items: center;
+      li {
+        padding: 0px 10px;
+      }//li
+      li:last-child{
+        padding:0px 0px;
+      }
+    }//navbar
+  }//main-menu
+
+.border {
+  padding: {
+    left: 0px;
+    right: 0px;
+    top:10px;
+    bottom: 10px;
+  }
+  border: {
+    bottom: 1px solid gray;
+  }
+  }//.border
+}//tablet
+
+@include desktop {
+
+  #main-header {
+    text-align: center;
+    border: none;
+  }
+}//desktop

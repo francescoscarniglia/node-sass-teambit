@@ -1,5 +1,8 @@
 import $ from 'jquery';
-
 $(document).ready(function(){
-  console.log('jQuery ok');
+  var btnToggle = $('.toggle');
+  btnToggle.click(function(){
+    $('.navbar').toggle();
+  });
+
 });//ready

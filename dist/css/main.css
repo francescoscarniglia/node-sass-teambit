@@ -14,28 +14,22 @@
      commons
 **************************************/
 
-.padding-1 {
-  padding: 10px;
-}
-
-.padding-2 {
-  padding: 20px;
-}
-
-.padding-3 {
-  padding: 30px;
-}
-
 body {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .img {
   height: auto;
 }
 
+@media (min-width: 992px) {
+  #app {
+    width: 1070px;
+    margin: auto;
+  }
+}
+
 #app {
-  display: flex;
   flex-direction: column;
   background: white;
   height: 100vh;
@@ -46,13 +40,64 @@ body {
   flex-grow: 1;
 }
 
+.btn {
+  width: 100%;
+  color: #30488f;
+  background: #fff;
+  border: 1px solid blue;
+  border-radius: 10px;
+  margin: 10px 2px;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.btn .googleIco img {
+  width: 16px;
+}
+
+.btn:hover {
+  background: #30488f;
+}
+
+.btn:hover .signUp {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .btn {
+    width: 100%;
+    background: #fff;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 0px 2px;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .btn .googleIco img {
+    width: 16px;
+  }
+}
+
+a.signUp {
+  color: #30488f;
+  font-weight: 600;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
 /*******************************
             header
 *******************************/
 
 #main-header {
   background: #fff;
-  border-bottom: 1px solid #bdb5af;
 }
 
 .toggle {
@@ -60,13 +105,57 @@ body {
 }
 
 .toggle img {
-  width: 30px;
+  width: 26px;
+}
+
+.main-menu {
+  border-top: 1px solid #bdb5af;
+}
+
+@media (min-width: 768px) {
+  .toggle {
+    display: none;
+  }
+
+  .logo {
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+
+  nav.main-menu {
+    border: 0;
+    padding-right: 0px;
+  }
+
+  nav.main-menu .navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+  }
+
+  nav.main-menu .navbar li {
+    padding: 0px 10px;
+  }
+
+  nav.main-menu .navbar li:last-child {
+    padding: 0px 0px;
+  }
+
+  .border {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+  }
 }
 
 @media (min-width: 992px) {
-  .navbar,
-  .toggle {
-    display: none;
+  #main-header {
+    text-align: center;
+    border: none;
   }
 }
 

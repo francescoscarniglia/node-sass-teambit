@@ -5,42 +5,42 @@
 // mixin
 
 // dichiaro mixin
-
-@mixin horizontal-list() {
-        list-style: none;
-        margin: 0;
-}
-@mixin padding-10 {
-  padding: 10px;
+@mixin fontRoboto() {
+  font-family: 'Lato', sans-serif;
 }
 
-@mixin displayFlex {
+@mixin displayFlex($nome, $direction) {
     display:  flex;
+    justify-content: $nome;
+    flex-direction:  $direction;
 }
 
-@mixin displayFlexEnd {
-    display:  flex;
-    justify-content: flex-end;
+@mixin linkInBnt() {
+  color: $col-blue;
+  font:{
+    weight: 600;
+    size: 1.4em;
+  }//font
+  text-decoration: none;
 }
-
-// cycles
-@for $i from 1 through 3 {
-  .padding-#{$i} {
-    padding: 10px * $i;
-  }
-}
-
-// general rules
 
 body {
-  font-family: sans-serif;
-}
+  @include fontRoboto();
+  }
 .img {
   height: auto;
 }
 
+//  app content
+@include desktop {
+  #app {
+    width: 1070px;
+    margin: auto;
+  }
+}
+
 #app {
-  @include displayFlex();
+
   flex-direction: column;
   background: rgba($bg-white, 1);
   height: 100vh;
@@ -51,5 +51,55 @@ body {
   }
 }
 
+//  btn with icon google
+.btn {
+  width: 100%;
+  color: $col-blue;
+  background: $bg-white;
+  border: 1px solid blue;
+  border: {
+      radius: 10px;
+    }//radius
+  margin: 10px 2px;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+  padding: 0px;
+    cursor: pointer;
+  .googleIco img {
+      width: 16px;
+    }//google-ico
+}
 
-// general rules
+
+.btn:hover{
+  background: $bg-blue;
+  .signUp{
+    color: $col-white;
+  }//signUp
+}//btn
+
+@include desktop {
+  .btn {
+    width: 100%;
+    background: $bg-white;
+    border: 1px solid blue;
+    border: {
+        radius: 10px;
+      }//radius
+    margin: 0px 2px;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+    padding: 0px;
+      cursor: pointer;
+    .googleIco img {
+        width: 16px;
+      }//google-ico
+  }
+}//desktop
+
+// a sign up
+a.signUp {
+  @include linkInBnt();
+}
