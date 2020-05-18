@@ -112,6 +112,10 @@ a.signUp {
   border-top: 1px solid #bdb5af;
 }
 
+.main-menu .navbar {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .toggle {
     display: none;
