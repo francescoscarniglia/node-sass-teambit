@@ -114,6 +114,20 @@ a.signUp {
 
 .main-menu .navbar {
   display: none;
+  position: relative;
+}
+
+.main-menu .navbar .diamond {
+  position: absolute;
+  top: -16px;
+  right: 5px;
+  border-top: 1px solid #bdb5af;
+  border-left: 1px solid #bdb5af;
+  border-bottom: 1px #bdb5af;
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
 }
 
 @media (min-width: 768px) {
@@ -132,18 +146,18 @@ a.signUp {
     padding-right: 0px;
   }
 
-  nav.main-menu .navbar {
+  nav.main-menu ul.navbar {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     align-items: center;
   }
 
-  nav.main-menu .navbar li {
+  nav.main-menu ul.navbar li {
     padding: 0px 10px;
   }
 
-  nav.main-menu .navbar li:last-child {
+  nav.main-menu ul.navbar li:last-child {
     padding: 0px 0px;
   }
 

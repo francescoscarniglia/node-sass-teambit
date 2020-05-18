@@ -16,7 +16,22 @@
 .main-menu {
   border-top: 1px solid $col-lightgray;
   .navbar {
-     display: none;
+      display: none;
+      position: relative;
+     .diamond {
+       position: absolute;
+       top: -16px;
+       right: 5px;
+       border: {
+         top: 1px solid $col-lightgray;
+         left: 1px solid $col-lightgray;
+         bottom: 1px $col-lightgray;
+       }
+       background: $bg-white;
+       width: 15px;
+       height: 15px;
+       transform: rotate(45deg);
+     }
   }//navbar
 }//main-menu
 
@@ -35,7 +50,7 @@
   nav.main-menu {
     border: 0;
     padding-right: 0px;
-    .navbar {
+    ul.navbar {
       display: flex;
       justify-content: flex-end;
       list-style: none;
